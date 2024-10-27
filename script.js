@@ -12,8 +12,7 @@ async function getWeather() {
                 <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
                 <p><strong>Weather:</strong> ${data.weather[0].description}</p>
                 <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
-                <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
-            `;
+                <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p> `;
 
             document.getElementById('weatherResult').innerHTML = weatherInfo;
         } else {
