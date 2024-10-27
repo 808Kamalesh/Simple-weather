@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <meta property="og:title" content="Weather App">
+    <meta property="og:image" content="weather.jpg">
+    <meta property="og:description" content="A Simple weather app">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Weather App">
+    <meta property="twitter:image" content="weather.jpg">
+    <meta property="twitter:description" content="A Simple weather app">
 </head>
 <body>
     <div class="container">
-        <input type="text" id="cityInput" placeholder="Enter your sthalam"> 
-        <button onclick="getWeather()" >Get Weather</button>
-        <div id="weatherResult"></div>
+        <h1 class="title">Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter your city"> 
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="weatherResult" class="result"></div>
     </div>
     <script src="script.js"></script>
 </body>
